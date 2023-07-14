@@ -54,7 +54,7 @@ int main(){
 	
 	a=fopen("input.txt","w");
 	if(a==NULL){
-		printf("errore");
+		printf("error");
 	}
 	fputc('?',a);
 	fclose(a);
@@ -79,7 +79,7 @@ int main(){
 	fclose(a);
 	system("CLS");
 	
-	printf("terminale per i controlli\n");
+	printf("controlls terminal\n");
 	//loop invifito di funzionamento
 	while(1){
 		//printf("ciclo  ");
@@ -90,7 +90,7 @@ int main(){
 		if(comando=='0'){//input deve scrivere -> scrivo e rendo primo carattere '1'
 			a=fopen("input.txt","w");
 			if(a==NULL){
-				printf("errore");
+				printf("error");
 			}
 			comando=getch();
 			//printf("%d   %c\n",comando,comando);
@@ -110,7 +110,7 @@ int main(){
 		if(comando=='2'){//output ha eseguito -> rendo primo carattere '0' (se il comnado e' cambia chi scrive allora salto questo stato)
 				a=fopen("input.txt","w");
 				if(a==NULL){
-					printf("errore");
+					printf("error");
 				}
 				fputc('0',a);
 				fclose(a);
